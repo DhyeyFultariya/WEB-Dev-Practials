@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0px auto;
+    /* padding: 20px; */
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+header h1 {
+    margin: 0;
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.contact-info, .education, .projects, .skills, .achievments {
+    margin-bottom: 20px;
+}
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    margin: -25px auto;
+}
