@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-11 Show Today's Date</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .time {
+            height: 4rem;
+            width:  25rem;
+            background: lightcoral;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 20%;
+            left: 38%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="showTime" class="time">
+    </div>
+    
+    <script>
+        const time = new Date();
+        const temp = time.toDateString();
+        
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        const formattedDate = time.toLocaleDateString('en-IN', options);
+        
+        document.getElementById("showTime").innerHTML = `<h1> Today's Date is : ${formattedDate} </h1>` ;
+    </script>
+
+</body>
+</html>
